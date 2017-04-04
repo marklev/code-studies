@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head> 
+	
+        <link rel="stylesheet" type="text/css"
+           href="https://fonts.googleapis.com/css?family=Noto+Serif">
+        
+        <div class="HeadingText"; style="font-family: 'Noto Serif', serif;font-size: 718%">
+            Design Study
+            </div>
+        <div class="SubHeadingText"; style="font-family: 'Noto Serif', serif; font-size:250%; padding:22px";>CSS Navigation Menu, JavaScript Image Slideshow, Typography</div>
+		
+	 <style>
+                  
+	 ul {
+	text-align: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: 'Noto Serif', serif;
+    font-size: 268%;
+    display: inline;
+    color:black;
+    float: left;
+    padding: 8px 33px;
+    text-decoration: none;
+    background-color:#ffffff;
+}
+
+a:hover {
+    color: #3f62dd;
+}
+
+.active {
+color:#3f62dd;
+}
+
+</style>
+
+<ul>
+  <li><a class="active" href="#Navigation 1">Navigation 1</a></li>
+  <li><a href="#Navigation 2">Navigation 2</a></li>
+  <li><a href="#Navigation 3">Navigation 3</a></li>
+</ul>	
+</head>
+
+<body>
+
+<div class="w3-content w3-section" style="max-width:888px">
+  <img class="mySlides w3-animate-top" src="http://res.cloudinary.com/dh5alrnwr/image/upload/v1477963320/Galaxy1_balhxn.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="http://res.cloudinary.com/dh5alrnwr/image/upload/v1477963321/Galaxy5_zue1qe.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="http://res.cloudinary.com/dh5alrnwr/image/upload/v1477963321/Galaxy4_xoe1c2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="http://res.cloudinary.com/dh5alrnwr/image/upload/v1477963336/Galaxy2_ftarxc.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="http://res.cloudinary.com/dh5alrnwr/image/upload/v1477963340/Galaxy3_eekydd.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+		<title>Style Template</title>
+
+		<meta name="author" content="Mark Lev">
+
+	</body>
+</html>
